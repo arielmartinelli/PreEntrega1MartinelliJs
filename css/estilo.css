@@ -12,12 +12,5 @@ body .box-grande .contenedor h1 {
   color: white;
   text-transform: uppercase;
 }
-body .box-grande .contenedor ul {
-  list-style-type: none;
-  padding: 0;
-}
-body .box-grande .contenedor li {
-  display: block;
-}
 
 /*# sourceMappingURL=estilo.css.map */

@@ -14,74 +14,54 @@ let Real = 69.30;
 let Euro = 370.20;
 
 let Yen = 2.33;
-    
-// const CriptoMonedas = 0
-
-// const Bitcoin = 10200000
-
-// const Ethereum = 658750
 
 let resultado = 0
 let DivisaConv = 0
 
-let moneda = prompt("Elige tu moneda:\n 1)Peso\n 2)Dolar\n 3)Yuan\n 4)Real\n 5)Libra estarlina\n 6)Euro\n 7)Yen");
+let moneda = prompt("Elige tu moneda:\n 1) Peso\n 2) Dolar\n 3) Yuan\n 4) Real\n 5) Libra estarlina\n 6) Euro\n 7) Yen");
 
 
 while(moneda == 1 | moneda == 2 | moneda == 3 | moneda == 4 | moneda == 5 | moneda == 6 | moneda == 7){
     
 if(moneda == 1){
-    moneda = "Pesos"
-    signo = "$"
-    //console.log("La moneda elegida es" + ' ' + moneda)
+    moneda = "pesos"
 }else if(moneda == 2){
-    moneda = "Dolar"
-    signo = "USD"
-    //console.log("La moneda elegida es" + ' ' + moneda)
+    moneda = "dolares"
 }else if(moneda == 3){
-    moneda = "Yuanes"
-    signo = "CNY"
-    //console.log("La moneda elegida es" + ' ' + moneda)
+    moneda = "yuanes"
 }else if(moneda == 4){
-    moneda = "Realales"
-    signo = "BRL"
-    //console.log("La moneda elegida es" + ' ' + moneda)
+    moneda = "realales"
 }else if(moneda == 5){
-    moneda = "Libras estarlinas"
-    signo = "GBP"
-    //console.log("La moneda elegida es" + ' ' + moneda)
+    moneda = "libras estarlinas"
 }else if(moneda == 6){
-    moneda = "Euros"
-    signo = "EUR"
-    //console.log("La moneda elegida es" + ' ' + moneda)
+    moneda = "euros"
 }else{
-    moneda = "Yens"
-    signo = "JPY"
-    //console.log("La moneda elegida es" + ' ' + moneda)
+    moneda = "yens"
 }
 
-let divisa = prompt("Elige a que divisa queres hacer la conversión:\n 1)Peso\n 2)Dolar\n 3)Yuan\n 4)Real\n 5)Libra estarlina\n 6)Euro\n 7)Yen\n ")
+let divisa = prompt("Elige a que divisa queres hacer la conversión:\n 1) Peso\n 2) Dolar\n 3) Yuan\n 4)Real\n 5) Libra estarlina\n 6) Euro\n 7) Yen\n ")
 
 if(divisa == 1){
     DivisaConv = Peso;
-    divisa = "Peso" 
+    divisa = "pesos" 
 } else if(divisa == 2){
     DivisaConv = Dolar
-    divisa = "Dolares"
+    divisa = "dolares"
 }else if(divisa == 3){
     DivisaConv = Yuan
-    divisa = "Yuanes"
+    divisa = "yuanes"
 }else if(divisa == 4){
     DivisaConv = Real
-    divisa = "Reales"
+    divisa = "reales"
 }else if(divisa == 5){
     DivisaConv = LibraEstarlina
-    divisa = "Libras Estarlinas"
+    divisa = "libras estarlinas"
 }else if(divisa == 6){
     DivisaConv = Euro
-    divisa = "Euros"
+    divisa = "euros"
 }else{
     DivisaConv = Yen
-    divisa = "Yens"
+    divisa = "yens"
 }
 
 
@@ -98,12 +78,12 @@ function convertirDiv(){
 
 if(moneda > DivisaConv){
     convertirMulti()
-    console.log(signo + CanMoneda + ' ' + "equivalen a" + ' ' + resultado.toFixed(2) + ' ' + divisa)
-    alert(signo + CanMoneda + ' ' + "equivalen a" + ' ' + resultado.toFixed(2) + ' ' + divisa)
+    console.log(CanMoneda + ' ' +  moneda + ' ' + "equivalen a" + ' ' + resultado.toFixed(2) + ' ' + divisa)
+    alert(CanMoneda + ' ' + moneda + ' ' + "equivalen a" + ' ' + resultado.toFixed(2) + ' ' + divisa)
 }else{
     convertirDiv()
-    console.log(signo + ' ' + "equivalen a" + ' ' + resultado.toFixed(2) + ' ' + divisa)
-    alert(signo + CanMoneda + ' ' + "equivalen a" + ' ' + resultado.toFixed(2) + ' ' + divisa)
+    console.log(CanMoneda + ' ' + moneda + ' ' + "equivalen a" + ' ' + resultado.toFixed(2) + ' ' + divisa)
+    alert(CanMoneda + ' ' + moneda + ' ' + "equivalen a" + ' ' + resultado.toFixed(2) + ' ' + divisa)
 }
 
 moneda = prompt("Elige tu moneda:\n 1)Peso\n 2)Dolar\n 3)Yuan\n 4)Real\n 5)Libra estarlina\n 6)Euro\n 7)Yen");
