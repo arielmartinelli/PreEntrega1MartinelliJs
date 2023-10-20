@@ -1,0 +1,23 @@
+body{
+    background-color: rgb(225, 235, 255);
+    .box-grande{
+        .contenedor{
+            margin-top: 5%;
+            width: 800px;
+            height: 500px;
+            background-color: rgb(26, 26, 65);
+            h1{
+                font-size: 3rem;
+                color: white;
+                text-transform: uppercase;
+            }
+            ul{
+                list-style-type: none;
+                padding: 0;
+            }
+            li{
+                display: block;
+            }
+        }
+    }
+}

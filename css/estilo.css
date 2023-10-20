@@ -1,0 +1,23 @@
+body {
+  background-color: rgb(225, 235, 255);
+}
+body .box-grande .contenedor {
+  margin-top: 5%;
+  width: 800px;
+  height: 500px;
+  background-color: rgb(26, 26, 65);
+}
+body .box-grande .contenedor h1 {
+  font-size: 3rem;
+  color: white;
+  text-transform: uppercase;
+}
+body .box-grande .contenedor ul {
+  list-style-type: none;
+  padding: 0;
+}
+body .box-grande .contenedor li {
+  display: block;
+}
+
+/*# sourceMappingURL=estilo.css.map */
